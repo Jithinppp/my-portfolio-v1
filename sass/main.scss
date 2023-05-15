@@ -117,13 +117,9 @@
     }
   }
   //   header expertise
+
   &__expertise {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-evenly;
-    @media (max-width: 450px) {
-      flex-direction: column;
-    }
+    width: 100%;
     .header__expertise__item {
       background-color: rgb(244, 242, 242);
       padding: 1rem;
@@ -146,7 +142,54 @@
   &__projects {
     min-height: 60vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    &__project {
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px;
+      padding: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      font-size: 1.5rem;
+
+      .stack__used {
+        margin: 1rem 0;
+        font-weight: 500;
+      }
+      img {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 20rem;
+  background-color: black;
+  margin-top: 5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    letter-spacing: -1px;
+    font-weight: 200;
+  }
+  a {
+    text-decoration: none;
+    margin: 0 2rem;
+  }
+  .logo__container {
+    margin-top: 2rem;
+    .footer__logos {
+      background-color: white;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+    }
   }
 }

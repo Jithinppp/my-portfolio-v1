@@ -146,12 +146,7 @@ a {
           object-fit: contain;
           width: 3rem; }
   .header__expertise {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-evenly; }
-    @media (max-width: 450px) {
-      .header__expertise {
-        flex-direction: column; } }
+    width: 100%; }
     .header__expertise .header__expertise__item {
       background-color: #f4f2f2;
       padding: 1rem;
@@ -169,5 +164,40 @@ a {
 .main__projects {
   min-height: 60vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; }
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .main__projects__project {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 1.5rem; }
+    .main__projects__project .stack__used {
+      margin: 1rem 0;
+      font-weight: 500; }
+    .main__projects__project img {
+      margin-bottom: 5px; }
+
+.footer {
+  height: 20rem;
+  background-color: black;
+  margin-top: 5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .footer h1 {
+    letter-spacing: -1px;
+    font-weight: 200; }
+  .footer a {
+    text-decoration: none;
+    margin: 0 2rem; }
+  .footer .logo__container {
+    margin-top: 2rem; }
+    .footer .logo__container .footer__logos {
+      background-color: white;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%; }

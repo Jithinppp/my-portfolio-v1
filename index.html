@@ -20,9 +20,13 @@
           <span>open to work!</span>
         </h1>
         <div class="navbar__items">
-          <a href="#" class="navbar__item">Work</a>
-          <a href="#" class="navbar__item">About</a>
-          <a href="#" class="navbar__item btn--primary">Let's talk</a>
+          <!-- <a href="" class="navbar__item">Work</a> -->
+          <!-- <a href="index.html#footer" class="navbar__item">About</a> -->
+          <a
+            href="mailto:jithinpparammal@gmail.com"
+            class="navbar__item btn--primary"
+            >Let's talk</a
+          >
         </div>
       </nav>
       <section class="header__section">
@@ -31,7 +35,9 @@
           👋 I'm a web developer now focused on frontend. I build your ideas
           into awesome websites or applications
         </p>
-        <button class="btn--secondary u_mtb_2">contact me</button>
+        <a href="mailto:jithinpparammal@gmail.com">
+          <button class="btn--secondary u_mtb_2">contact me</button>
+        </a>
         <div class="header__section__experience__icons">
           <!-- animating logos of technologies eg react js supabase firebase etc -->
           <div class="slide">
@@ -80,25 +86,8 @@
       </section>
       <section class="header__expertise">
         <div class="header__expertise__item">
-          <h5>Frontend</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            a!
-          </p>
-        </div>
-        <div class="header__expertise__item">
-          <h5>Backend</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            a!
-          </p>
-        </div>
-        <div class="header__expertise__item">
-          <h5>Databases</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            a!
-          </p>
+          <h5>My expertise</h5>
+          <p>HTML | CSS/SCSS | Javascript | ReactJs | redux | firebase</p>
         </div>
       </section>
     </header>
@@ -109,24 +98,70 @@
         <span class="btn--primary">all works</span>
       </div>
       <div class="main__projects">
-        <div class="main__projects__project">Project 1</div>
-        <div class="main__projects__project">Project 2</div>
-        <div class="main__projects__project">Project 3</div>
-        <div class="main__projects__project">Project 4</div>
+        <div class="main__projects__project">
+          <img src="./images/projects/online-store.png" />
+          An E-commerce website were a users can authenticate and add remove
+          checkout items from the cart.
+          <p class="stack__used">
+            ReactJs | Redux | firebase |styled-components | stripe
+          </p>
+          <a href="https://online-store-v1.vercel.app/" target="_blank"
+            >go to online-store-v1</a
+          >
+        </div>
+        <div class="main__projects__project">
+          <img src="./images/projects/facts-club.jpg" />
+          A simple web app for facts sharing were a user can share facts with a
+          category and users can like dislike the fact
+          <p class="stack__used">ReactJs | supabase | CSS</p>
+          <a href="https://facts-club.vercel.app/" target="_blank"
+            >go to facts-club</a
+          >
+        </div>
+        <div class="main__projects__project">
+          <img src="./images/projects/recipe-app.png" />
+          A simple food recipe-app were a user can filter out different types of
+          food like indian,chinese,korean etc and click one recipe and get the
+          ingredients and instructions to make the recipe
+          <p class="stack__used">
+            ReactJs | spoonacularAPI | axios | react-Splide
+          </p>
+          <a href="https://react-recipe-app-sigma.vercel.app/" target="_blank"
+            >go to recipe-app</a
+          >
+        </div>
+        <!-- <div class="main__projects__project">Project 4</div> -->
       </div>
     </main>
-    <footer>
-      <div>
-        <h1>jithinp</h1>
-        <span>insta</span>
-        <span>linkedin</span>
-        <span>github</span>
-      </div>
-      <div>
-        <span>Home</span>
-        <span>about</span>
-        <span>works</span>
-        <span>hire me</span>
+    <footer class="footer" id="#footer">
+      <h1>Jithin.p</h1>
+      <div class="logo__container">
+        <a href="mailto:jithinpparammal@gmail.com" target="_blank">
+          <img
+            src="./images/logos/html.png"
+            alt="mail"
+            srcset=""
+            class="footer__logos"
+          />
+        </a>
+        <a href="https://github.com/Jithinppp" target="_blank">
+          <img
+            src="./images/github.png"
+            alt="github"
+            srcset=""
+            class="footer__logos"
+          /> </a
+        ><a
+          href="https://www.linkedin.com/in/jithin-p-8396501b7/"
+          target="_blank"
+        >
+          <img
+            src="./images/logos/vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930585_835.png"
+            alt="linkedIn"
+            srcset=""
+            class="footer__logos"
+          />
+        </a>
       </div>
     </footer>
   </body>
